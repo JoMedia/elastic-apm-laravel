@@ -42,6 +42,12 @@
          }
       }
    },
+   "repositories": [
+      {
+         "type": "git",
+         "url": "https://f83a7355eb5ae8280995cef65af45a04a6ae65c1@github.com/JoMedia/elastic-apm-php-agent.git"
+      }
+   ],
    "config":{  
       "optimize-autoloader":true
    },
