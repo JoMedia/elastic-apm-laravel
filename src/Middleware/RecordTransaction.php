@@ -36,8 +36,12 @@ class RecordTransaction
      */
     public function handle($request, Closure $next)
     {
+        $transactionId = $request->headers->get('elastic-apm-traceparent');
         $transaction = $this->agent->startTransaction(
-            $this->getTransactionName($request)
+            $this->getTransactionName($request),
+            [],
+            null,
+            $transactionId
         );
 
         // await the outcome
