@@ -16,7 +16,7 @@
       "illuminate/http":"^6.0",
       "illuminate/routing":"^6.0",
       "illuminate/support":"^6.0",
-      "jomedia/elastic-apm-php-agent": "1.*",
+      "philkra/elastic-apm-php-agent": "7.0.0-rc3",
       "ramsey/uuid":"^3.0"
    },
    "require-dev":{  
@@ -42,12 +42,6 @@
          }
       }
    },
-   "repositories": [
-      {
-         "type": "git",
-         "url": "https://f83a7355eb5ae8280995cef65af45a04a6ae65c1@github.com/JoMedia/elastic-apm-php-agent.git"
-      }
-   ],
    "config":{  
       "optimize-autoloader":true
    },
